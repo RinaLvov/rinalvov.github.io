@@ -1,0 +1,108 @@
+
+.title h2 {
+    font-size: 35px;
+}
+
+.title p {
+    color: rgb(77, 76, 76);
+    font-size: 15px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+}
+
+.dataEntry {
+    display: flex;
+    font-size: 12px;
+    margin-top: 30px;
+}
+
+label {
+    padding: 3px;
+    margin-left: 5px;
+}
+
+.grossIncome {
+    position: relative;
+    display: block;
+}
+
+.grossIncome::before {
+    content: '$';
+    color: rgb(100, 99, 99);
+    position: absolute;
+    top: 22px;
+    left: 9px;
+    z-index: 99;
+    font-size: 17px;
+    font-family: "Montserrat", sans-serif;
+  }
+  
+/* to have an element overlay another element, we must first wrap it 
+in a div and then use the ::before on the dive to position the text */
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* ^this is so that we dont have up and down arrows in the input field */
+
+#incomeTextBox {
+    color: rgb(34, 35, 35);
+    background-color: rgb(236, 236, 234);
+    font-size: 14px;
+    font-family: "Montserrat", sans-serif;
+    text-align: right;
+    padding: 5px 5px;
+    border: none;
+    border-radius: 20px;
+    resize: none;
+    width: 190px;
+    height: 25px;
+}
+
+#incomeTextBox:hover {
+    color: rgb(34, 35, 35);
+    background-color: rgb(224, 224, 221);
+}
+
+.timeframe {
+    margin-left: 14px;
+}
+
+#incomeTimeframe {
+    color: rgb(34, 35, 35);
+    background-color: rgb(236, 236, 234);
+    font-size: 14px;
+    font-family: "Montserrat", sans-serif;
+    text-align: center;
+    padding: 5px 5px;
+    border: none;
+    border-radius: 20px;
+    width: 100px;
+    height: 35px;
+}
+
+#incomeTimeframe:hover {
+    color: rgb(34, 35, 35);
+    background-color: rgb(224, 224, 221);
+}
+
+#provinces {
+    color: rgb(34, 35, 35);
+    border: none;
+    border-radius: 20px;
+    background-color: rgb(236, 236, 234);
+    font-size: 14px;
+    font-family: "Montserrat", sans-serif;
+    text-align: center;
+    padding: 5px;
+    width: 160px;
+    height: 35px;
+}
+
+#provinces:hover {
+    color: rgb(34, 35, 35);
+    background-color:  rgb(184, 181, 181);
+}

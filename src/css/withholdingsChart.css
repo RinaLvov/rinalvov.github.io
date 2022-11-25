@@ -1,0 +1,132 @@
+
+
+.resultsFold h3 {
+    margin-top: 10px;
+    color: rgb(100, 99, 99);
+}
+
+.salary {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+#salary {
+    margin-top: 30px;
+    font-weight: bold;
+    color: black;
+}
+
+#salaryValue {
+    margin-top: 30px;
+    font-weight: bold;
+    color: black;
+}
+
+.federalDeduction {
+    display: flex;
+    justify-content: space-between;
+}
+
+.federalDeduction p {
+    margin-top: 7px;
+}
+
+.provincialDeduction {
+    display: flex;
+    justify-content: space-between;
+}
+
+.provincialDeduction p {
+    margin-top: 7px;
+}
+
+.cpp {
+    display: flex;
+    justify-content: space-between;
+}
+
+.cpp p {
+    margin-top: 7px;
+}
+
+.ei {
+    display: flex;
+    justify-content: space-between;
+}
+
+.ei p {
+    margin-top: 7px;
+}
+
+.qpp {
+    display: flex;
+    justify-content: space-between;
+}
+
+.qpp p {
+    margin-top: 7px;
+}
+
+.qpip {
+    display: flex;
+    justify-content: space-between;
+}
+
+.qpip p {
+    margin-top: 7px;
+}
+
+.totalTax{
+    display: flex;
+    justify-content: space-between;
+}
+
+#totalTaxHeader {
+    margin-top: 30px;
+    font-weight: bold;
+    color: black;
+}
+
+#totalTax {
+    margin-top: 30px;
+    font-weight: bold;
+    color: black;
+}
+
+.netPay {
+    display: flex;
+    justify-content: space-between;
+}
+
+#netPayHeader {
+    font-weight: bold;
+    font-size: 20px;
+    color: black;
+}
+
+#netPay {
+    font-weight: bold;
+    font-size: 20px;
+    color: black;
+    margin-bottom: 30px;
+    margin-top: 10px;
+}
+
+.marginalTax {
+    display: flex;
+    justify-content: space-between;
+}
+
+.marginalTax p {
+    margin-top: 7px;
+}
+
+.averageTax {
+    display: flex;
+    justify-content: space-between;
+}
+
+.averageTax p {
+    margin-top: 7px;
+}
