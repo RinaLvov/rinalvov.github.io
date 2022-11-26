@@ -10,6 +10,14 @@ body {
     background-color: rgb(236, 236, 234);
 }
 
+.logo {
+    height: 30px;
+    width: 100px;
+    cursor: pointer;
+    order: 3;
+    margin-left: auto;
+}
+
 h2{
     color: rgb(5, 5, 5);
     font-size: 25px;
