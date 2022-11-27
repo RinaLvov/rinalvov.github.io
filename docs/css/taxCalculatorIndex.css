@@ -26,8 +26,10 @@ nav {
 .pointer {
     float: right;
     margin-right: 200px;
-    height: 600px;
+    height: 650px;
     width: 480px;
+    position: relative;
+    bottom: 60px;
 }
 
 h2{
@@ -42,7 +44,6 @@ h2{
     box-shadow: 3px 8px 15px 2px rgba(178, 178, 178, 0.533);
     padding: 20px;
     margin: 30px;
-    /* margin-left: 50px; */
     margin-top: 50px;
     width: 600px;
 }

@@ -9,34 +9,19 @@ import provincialCalc from './provincialCalc.js'
         // console.log('federalTaxDeductable:', grossIncome * 0.15)
     }
     if (49020 < grossIncome <= 98040){
-        // let bracket1 = 49020 * 0.15
-        // let bracket2 = (grossIncome - 49020)
         federalTaxDeductable = (grossIncome * 0.205) 
         // console.log('federalTaxDeductable:', (bracket2 * 0.205) + bracket1)
     }
     if (98040  < grossIncome <= 151978){
-        // let bracket1 = 49020 * 0.15
-        // let bracket2 = (98040 - 49020) * 0.205
-        // let bracket3 = grossIncome - 98040
         federalTaxDeductable = (grossIncome * 0.26);
         // console.log('federalTaxDeductable:', grossIncome * 0.26)
     }
     if (151978  < grossIncome <= 216511){
-        // let bracket1 = 49020 * 0.15
-        // let bracket2 = (98040 - 49020) * 0.205
-        // let bracket3 = (151978 - 98040) * 0.26
-        // let bracket4 = (grossIncome - 151978)
         federalTaxDeductable = (grossIncome * 0.29);
         // console.log('federalTaxDeductable:', grossIncome * 0.29)
     }
     if (grossIncome > 216511){
-        // let bracket1 = 49020 * 0.15
-        // let bracket2 = (98040 - 49020) * 0.205
-        // let bracket3 = (151978 - 98040) * 0.26
-        // let bracket4 = (216511 - 151978) * 0.29
-        // let bracket5 = (grossIncome - 216511)
         federalTaxDeductable = (grossIncome * 0.29)
-    // console.log('calculateFe(grossIncome * 0.33);
         // console.log('federalTaxDeductable:', grossIncome * 0.33)
     }
     return federalTaxDeductable;

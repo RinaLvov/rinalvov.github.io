@@ -5,7 +5,6 @@ const calculateTaxForQuebec = (grossIncome) => {
     if (grossIncome <= 42184) {
         // console.log ('if:', grossIncome <= 45142)
         quebecTaxDeductable =  (grossIncome * 0.0506);
-        // created a variable called ptd to store the value tax for this tax bracket
         // console.log('quebecTaxDeductable:', grossIncome * 0.0506)
     };
     // console.log("calculateTaxForBC:", grossIncome)

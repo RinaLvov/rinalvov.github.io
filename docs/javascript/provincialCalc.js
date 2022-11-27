@@ -5,22 +5,16 @@ const calculateTaxForOntario = (grossIncome) => {
     if (grossIncome <= 45142) {
         // console.log ('if:', grossIncome <= 45142)
         provincialTaxDeductable =  (grossIncome * 0.0505);
-        // created a variable called provincialTaxDeductable to store the value tax for this tax bracket
         // console.log('provincialTaxDeductable:', grossIncome * 0.0505)
     };
     // console.log("calculateTaxForOntario:", grossIncome)
     if (45142 > grossIncome <= 90287) {
-        let bracket1 = 45142 * 0.0505
-        let bracket2 = (grossIncome - 45142) 
-        provincialTaxDeductable = (bracket2 * 0.0915) + bracket1;
+        provincialTaxDeductable = (grossIncome * 0.0915);
     
         // console.log ('provincialTaxDeductable:', grossIncome * 0.0915)
     }
     if (90287 > grossIncome <= 150000) {
-        let bracket1 = 45142 * 0.0505
-        let bracket2 = (grossIncome - 45142) * 0.0915
-        let bracket3 = (grossIncome - bracket2)
-        provincialTaxDeductable = (bracket3 * 0.1116) + bracket2 + bracket1;
+        provincialTaxDeductable = (grossIncome * 0.1116);
         // console.log ('provincialTaxDeductable:', grossIncome * 0.1116)
     }
     if (150000 > grossIncome <= 220000) {
@@ -39,7 +33,6 @@ const calculateTaxForManitoba = (grossIncome) => {
     if (grossIncome <= 34431) {
         // console.log ('if:', grossIncome <= 45142)
         provincialTaxDeductable = Math.ceil(grossIncome * 0.108);
-        // created a variable called ptd to store the value tax for this tax bracket
         // console.log('provincialTaxDeductable:', grossIncome * 0.108)
     };
     // console.log("calculateTaxForBC:", grossIncome)

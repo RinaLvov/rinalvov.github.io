@@ -46,54 +46,6 @@ export const calculateTax = (grossIncome, province) => {
         initialUiParams = englishCalc(province, grossIncome)
     }
     // console.log ('calculateTax:', grossIncome, province )
-    
-    // const provincialTax = provincialCalc(province, grossIncome)
-    // const federalTax = calculateFederalTax(grossIncome);
-    // // console.log("federalTax: ", federalTax)
-    // const cppTax = calculateCPPTax (grossIncome);
-    // // console.log("cppTax: ", cppTax)
-    // const eiTax = calculateEITax(grossIncome);
-    // // console.log("eiTax: ", eiTax)
-    // const totalTax = calculateTotalTax(federalTax, provincialTax, cppTax, eiTax);
-    // // console.log ('totalTax:', totalTax)
-    // const netPay = calculateNetPay(grossIncome,totalTax);
-    // const marginalRate = calculateMarginalTax (grossIncome);
-    // const averageRate = calculateAverageTax (totalTax, grossIncome);
-
-    // const quebecEI = calculateEIQuebec (grossIncome);
-    // const quebecPension = calculateQPP (grossIncome);
-    // const quebecInsurance = calculateQPIP (grossIncome);
-    // const quebecTax = calculateQuebcTotalTax (federalTax, provincialTax,
-    //     quebecEI, quebecPension, quebecInsurance)
-    // const quebecNetPay =  calculateQuebecNetPay (grossIncome, totalTax)
-    // const quebecAverageRate = calculateAverageTaxQuebec (totalTax, grossIncome)
-
-    // const eiTaxForUI = province == 'Quebec' ? quebecEI : eiTax;
-
-    // const qpipForUI = province == 'Quebec' ? quebecInsurance : 0
-
-    // const qppForUI = province == 'Quebec' ? quebecPension : 0
-
-    // const totalTaxForUI = province == 'Quebec' ? quebecTax : totalTax;
-
-    // const netPayForUI = province == 'Quebec' ? quebecNetPay : netPay;
-   
-    // const averageRateForUI = province == 'Quebec' ? quebecAverageRate : averageRate;
-
-    // const initialUiParams = {
-    //     eiTax,
-    //     totalTax,
-    //     netPay,
-    //     averageRate,
-    //     quebecPension: 0, 
-    //     quebecInsurance: 0,
-    //     grossIncome: grossIncome,
-    //     federalTax, 
-    //     provincialTax, 
-    //     cppTax, 
-    //     marginalRate
-    // //created an object that holds the keys and values of our calculations
-    // };
 
    const deductableParams = {
     eiTax: initialUiParams.eiTax,
@@ -113,10 +65,8 @@ export const calculateTax = (grossIncome, province) => {
 
 
     // console.log ('globalFormParams:', globalFormParams)
-    // globalFormParams = initialUiParams 
 
     updateDOM(initialUiParams);
-    //passing through our object as a single parameter
 }
 
 
@@ -168,10 +118,11 @@ export const timeFrame = (payPeriod) => {
 
 const updateDOM = (uiParams) => {
     Object.keys(uiParams).forEach(key => {
-        if (key === "marginalRate" || key === "averageRate"){
+        if (key === "marginalRate" || key === "averageRate") {
             document.getElementById(key).textContent = `${Math.round(uiParams[key])}%`
             // console.log ("rates:", document.getElementById(key).textContent )
-
+        } else if (key === "grossIncome" || key === "netPay"){
+            document.getElementById(key).textContent = `$${Math.round(uiParams[key])}`
         }
         else {
             document.getElementById(key).textContent = `- $${Math.round(uiParams[key])}`
